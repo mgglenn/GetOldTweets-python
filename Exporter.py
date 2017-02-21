@@ -66,7 +66,8 @@ def main(argv):
                             current_tweet.append(t.date.strftime(("%Y-%m-%d %H:%M")))
                             current_tweet.append(t.retweets)
                             current_tweet.append(t.favorites) 
-                            
+    
+                            # replace unicode characters with space so it writes to csv
                             t.text = ''.join([i if ord(i) < 128 else ' ' for i in t.text])
 
                             current_tweet.append(t.text)
