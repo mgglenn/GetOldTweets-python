@@ -85,3 +85,7 @@ I was searching other tools to do this job but I didn't found it, so after analy
 ```
     python Exporter.py --username "barackobama" --maxtweets 10 --toptweets
 ```
+- Export tweets to custom .csv file (contributed by mgglenn)
+```
+    python Exporter.py --username "barackobama" --maxtweets 10 --filename custom_tweets.csv
+```
